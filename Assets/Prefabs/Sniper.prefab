@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2261494716029482999}
   - component: {fileID: 5900689734819437358}
   - component: {fileID: 8778057938104847981}
-  - component: {fileID: 581196513622758561}
   m_Layer: 0
   m_Name: EnemyLaser
   m_TagString: Untagged
@@ -91,22 +90,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &581196513622758561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964148667775784154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a96decf579bd7478b7f6c5eb88c164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LaserBeam
-  startPoint: {fileID: 910818830929737411}
-  target: {fileID: 0}
-  laserMesh: {fileID: 2261494716029482999}
-  radius: 0.03
 --- !u!1 &2185547583714719065
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5136884170031620618}
   - component: {fileID: 3530919603559959495}
+  - component: {fileID: 789472130955143241}
   - component: {fileID: 8386056706289754384}
   - component: {fileID: 1718176235590351009}
   - component: {fileID: 3021757138312274519}
@@ -436,10 +420,25 @@ MonoBehaviour:
   animator: {fileID: 918991266436059436}
   damage: 50
   range: 10
-  fireRate: 12
+  fireRate: 3
   aimTime: 4
   timerText: {fileID: 5496862752012468043}
-  laserBeam: {fileID: 581196513622758561}
+  laserBeam: {fileID: 789472130955143241}
+--- !u!114 &789472130955143241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199331441415632739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a96decf579bd7478b7f6c5eb88c164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaserBeam
+  startPoint: {fileID: 910818830929737411}
+  laserMesh: {fileID: 2261494716029482999}
+  radius: 0.03
 --- !u!114 &8386056706289754384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,7 +548,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3269668846806776665}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.00954, y: 0.00954, z: 0.00954}
   m_ConstrainProportionsScale: 0
@@ -557,7 +556,7 @@ RectTransform:
   - {fileID: 5146970062886207544}
   - {fileID: 1650921399041335820}
   m_Father: {fileID: 5136884170031620618}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 2.43}
@@ -1032,19 +1031,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1052,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ead63fac9a48c8148b85f81f789b402e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
