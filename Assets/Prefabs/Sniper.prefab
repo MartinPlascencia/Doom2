@@ -438,7 +438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LaserBeam
   startPoint: {fileID: 910818830929737411}
   laserMesh: {fileID: 2261494716029482999}
-  radius: 0.03
+  radius: 0.01
+  targetOffset: {x: 0, y: 1.2, z: 0}
 --- !u!114 &8386056706289754384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,8 +660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 24.9}
-  m_SizeDelta: {x: 66, y: 75.86}
+  m_AnchoredPosition: {x: 0, y: 44.8}
+  m_SizeDelta: {x: 104.9, y: 130.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7436262913658021512
 CanvasRenderer:
@@ -692,11 +693,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7b7c189416040f34da9f56d0b6c8ed33, type: 3}
-    m_FontSize: 40
+    m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 50
+    m_MaxSize: 96
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -900,7 +901,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 866.16003
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4822094617212967328, guid: 404d8cc1fb3a87148bd90a1c2a834a82, type: 3}
+    - {fileID: 7356407526531022962, guid: 404d8cc1fb3a87148bd90a1c2a834a82, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3078961045292873402, guid: 404d8cc1fb3a87148bd90a1c2a834a82, type: 3}
