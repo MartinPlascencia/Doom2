@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18d832bbc759266468d294da18e7e852, type: 3}
-  m_Name: Gun
+  m_Name: AutomaticGun
   m_EditorClassIdentifier: Assembly-CSharp::GunData
   damage: 10
-  fireRate: 20
-  totalBullets: 40
+  fireRate: 10
+  totalBullets: 80
   reloadTime: 2
-  cartridgeSize: 10
-  gunType: 1
+  cartridgeSize: 30
+  gunType: 0
   shootSoundName: shoot
   reloadSoundName: reload
   dropSoundName: drop_gun
-  sprite: {fileID: 21300000, guid: 89c6fe10b29cbf445b8519721b2fb348, type: 3}
+  sprite: {fileID: 21300000, guid: d09e08fa53973cc4bbfc52b10fedf39c, type: 3}
